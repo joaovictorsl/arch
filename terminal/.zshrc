@@ -29,11 +29,23 @@ neovim_alias() {
         # If no arguments, use fzf to find a file/dir
         target=$(fdfind --hidden --exclude .git | fzf-tmux -p)
         initial_dir=$(pwd)
+
         if [ -n "$target" ]; then
-            cd "$target"
-            nvim .
+            # If something was selected try to open it on neovim
+            if [ -d "$target" ]; then
+                # If target is directory
+                cd "$target"
+                nvim
+            elif [ -f "$target" ]; then
+                # If target is a regular file
+                # TODO: maybe cut parent dir path and
+                # TODO: cd there just like we do when it is a dir
+                nvim "$target"
+            fi
+            # Go back to dir where we started our editing from
             cd "$initial_dir"
         fi
+
     fi
 }
 alias v=neovim_alias

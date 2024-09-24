@@ -17,6 +17,7 @@ local ensure_installed = {
     "lua_ls",
     "pylyzer",
     "rust_analyzer",
+    "yamlls",
 }
 
 require('mason').setup({})
