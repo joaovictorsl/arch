@@ -10,7 +10,7 @@ end)
 local ensure_installed = {
     "bashls",
     "cssls",
-    "deno",
+    "denols",
     "docker_compose_language_service",
     "dockerls",
     "gopls",
