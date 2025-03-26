@@ -1,6 +1,11 @@
-require('telescope').setup()
+local telescope = require('telescope')
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>sf', builtin.find_files, {})
+
+telescope.setup()
+
+vim.keymap.set('n', '<leader>sf', function()
+    builtin.find_files()
+end)
 vim.keymap.set('n', '<leader>sg', function()
-	builtin.grep_string({ search = vim.fn.input('Grep > ') })
+    builtin.grep_string({ search = vim.fn.input('Grep > ') })
 end)

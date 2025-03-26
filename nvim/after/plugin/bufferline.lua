@@ -1,3 +1,3 @@
-vim.opt.termguicolors = true
-require("bufferline").setup{}
+local bufferline = require("bufferline")
 
+bufferline.setup({})
