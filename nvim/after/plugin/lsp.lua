@@ -10,7 +10,6 @@ end)
 local ensure_installed = {
     "bashls",
     "cssls",
-    "denols",
     "docker_compose_language_service",
     "dockerls",
     "gopls",
@@ -19,6 +18,7 @@ local ensure_installed = {
     "lua_ls",
     "pyright",
     "rust_analyzer",
+    "ts_ls",
 }
 
 require('mason').setup({})
