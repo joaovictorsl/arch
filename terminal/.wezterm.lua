@@ -5,11 +5,10 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.enable_tab_bar = false
-
 config.color_scheme = 'GitHub Dark'
 
 -- Background Image Config
-config.window_background_image = '/home/joaovsl/Downloads/automata.jpeg'
+config.window_background_image = '/home/joaovictorsl/Pictures/star_wars.jpg'
 config.window_background_image_hsb = {
 	brightness = 0.025,
 	hue = 1.0,

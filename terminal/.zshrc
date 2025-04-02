@@ -11,7 +11,13 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
+    asdf
+    docker
+    docker-compose
     git
+    helm
+    kubectl
+    terraform
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
@@ -55,16 +61,8 @@ alias v=neovim_alias
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Go stuff
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:~/go/bin
-export GOPRIVATE=github.com/joaovictorsl/gorkpool,github.com/joaovictorsl/bencoding
+export GOPRIVATE=github.com/joaovictorsl/*
 # Go stuff
-
-# NVM stuff
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-# NVM stuff
 
 # Docker stuff
 clean_docker_images() {
@@ -85,3 +83,7 @@ clean_docker() {
     clean_docker_volumes
 }
 # Docker sutff
+
+# asdf stuff
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+# asdf stuff
