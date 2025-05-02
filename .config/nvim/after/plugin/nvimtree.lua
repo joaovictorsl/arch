@@ -10,7 +10,7 @@ local function my_on_attach(bufnr)
     vim.keymap.set('n', '<leader>pv', function()
         api.tree.toggle({ find_file = true, focus = true })
     end)
-    vim.keymap.set('n', '<leader>ca', api.tree.collapse_all)
+    vim.keymap.set('n', '<leader>cf', api.tree.collapse_all)
 end
 
 local icons = {
@@ -182,6 +182,10 @@ nvimtree.setup({
     hijack_cursor = true,
     hijack_unnamed_buffer_when_opening = false,
     sync_root_with_cwd = true,
+    filters = {
+        custom = { '^\\.git$' },
+        git_ignored = false,
+    },
     view = {
         number = true,
         relativenumber = true,

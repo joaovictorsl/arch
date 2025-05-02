@@ -1,0 +1,16 @@
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+#
+config-file = keybindings.conf
+
+font-family = "Jetbrains Mono"
+theme = "GitHub-Dark-Default"
+
+background-opacity = 0.8
+cursor-invert-fg-bg
+
+resize-overlay=never
+app-notifications=no-clipboard-copy

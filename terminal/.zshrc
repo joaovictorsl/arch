@@ -33,7 +33,7 @@ neovim_alias() {
         nvim "$@"
     else
         # If no arguments, use fzf to find a file/dir
-        target=$(fdfind --hidden --exclude .git | fzf-tmux -p)
+        target=$(fd --hidden --exclude .git | fzf-tmux -p)
         initial_dir=$(pwd)
 
         if [ -n "$target" ]; then
@@ -64,6 +64,10 @@ alias v=neovim_alias
 export GOPRIVATE=github.com/joaovictorsl/*
 # Go stuff
 
+# Flutter stuff
+export CHROME_EXECUTABLE=google-chrome-stable
+# Flutter stuff
+
 # Docker stuff
 clean_docker_images() {
     docker rmi $(docker images -q)
@@ -87,3 +91,8 @@ clean_docker() {
 # asdf stuff
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 # asdf stuff
+
+# Start hyprland
+if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
+  exec hyprland
+fi
