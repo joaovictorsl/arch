@@ -17,6 +17,8 @@ $DIR/scripts/install_asdf_rust.sh
 $DIR/scripts/install_asdf_golang.sh
 $DIR/scripts/install_asdf_node.sh
 $DIR/scripts/install_asdf_flutter.sh
+$DIR/scripts/install_asdf_kubectl.sh
+$DIR/scripts/install_asdf_k9s.sh
 
 $DIR/scripts/install_docker.sh
 
