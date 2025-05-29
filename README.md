@@ -25,6 +25,7 @@ configured.
 | Hyprland   | 🟩          |
 | Chrome     | 🟩          |
 | Lazygit    | 🟩          |
+| Ngrok      | 🟩          |
 | Others     | 🟩          |
 
 ## Getting started

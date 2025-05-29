@@ -25,6 +25,7 @@ yay -S --noconfirm \
     man-pages \
     ninja \
     clang \
-    cmake
+    cmake \
+    ngrok
 
 echo -e "${GREEN}====> DONE!${NO_COLOR}"
