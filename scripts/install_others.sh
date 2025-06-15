@@ -26,6 +26,8 @@ yay -S --noconfirm \
     ninja \
     clang \
     cmake \
-    ngrok
+    ngrok \
+    noto-fonts-emoji \
+    otf-font-awesome
 
 echo -e "${GREEN}====> DONE!${NO_COLOR}"
