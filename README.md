@@ -59,7 +59,3 @@ git clone https://github.com/joaovictorsl/arch
 5. Post scripts
 
 - Setup android studio
-
-## TODO
-
-- Unbind Ctrl + Shift + N from ghostty
