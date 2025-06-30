@@ -28,6 +28,8 @@ yay -S --noconfirm \
     cmake \
     ngrok \
     noto-fonts-emoji \
-    otf-font-awesome
+    otf-font-awesome \
+    xdg-desktop-portal \
+    xdg-desktop-portal-wlr
 
 echo -e "${GREEN}====> DONE!${NO_COLOR}"
