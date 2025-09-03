@@ -26,4 +26,7 @@ ln -s $REPO_ROOT/.config/nvim $HOME/.config/nvim
 rm -rf $HOME/.config/rofi
 ln -s $REPO_ROOT/.config/rofi $HOME/.config/rofi
 
+rm -rf $HOME/.config/mise
+ln -s $REPO_ROOT/.config/mise $HOME/.config/mise
+
 echo -e "${GREEN}====> DONE!${NO_COLOR}"

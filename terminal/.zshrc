@@ -11,7 +11,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
-    asdf
+    mise
     docker
     docker-compose
     git
@@ -87,10 +87,6 @@ clean_docker() {
     clean_docker_volumes
 }
 # Docker sutff
-
-# asdf stuff
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-# asdf stuff
 
 # Start hyprland
 if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then

@@ -12,13 +12,7 @@ $DIR/scripts/install_yay.sh
 $DIR/scripts/install_oh_my_zsh.sh
 $DIR/scripts/setup_symbolic_links.sh $DIR
 
-$DIR/scripts/install_asdf.sh
-$DIR/scripts/install_asdf_rust.sh
-$DIR/scripts/install_asdf_golang.sh
-$DIR/scripts/install_asdf_node.sh
-$DIR/scripts/install_asdf_flutter.sh
-$DIR/scripts/install_asdf_kubectl.sh
-$DIR/scripts/install_asdf_k9s.sh
+$DIR/scripts/install_mise.sh
 
 $DIR/scripts/install_docker.sh
 
