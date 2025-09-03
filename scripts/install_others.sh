@@ -30,6 +30,11 @@ yay -S --noconfirm \
     noto-fonts-emoji \
     otf-font-awesome \
     xdg-desktop-portal \
-    xdg-desktop-portal-wlr
+    xdg-desktop-portal-wlr \
+    android-studio \
+    obsidian \
+    zen-browser \
+    beekeeper-studio-bin \
+    stremio
 
 echo -e "${GREEN}====> DONE!${NO_COLOR}"
