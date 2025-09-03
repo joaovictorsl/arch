@@ -72,22 +72,27 @@ export CHROME_EXECUTABLE=google-chrome-stable
 # Flutter stuff
 
 # Docker stuff
-clean_docker_images() {
-    docker rmi $(docker images -q)
+clean_docker_containers() {
+    docker rm -f $(docker ps -qa)
 }
 
-clean_docker_containers() {
-    docker rm $(docker ps -qa) --force
+clean_docker_images() {
+    docker rmi -f $(docker images -qa)
 }
 
 clean_docker_volumes() {
     docker volume rm $(docker volume ls -q)
 }
 
+clean_docker_networks() {
+    docker network rm $(docker network ls --format {{.Name}} | grep -v 'bridge\|host\|none')
+}
+
 clean_docker() {
     clean_docker_containers
     clean_docker_images
     clean_docker_volumes
+    clean_docker_networks
 }
 # Docker sutff
 
