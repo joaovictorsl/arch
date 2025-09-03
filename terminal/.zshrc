@@ -44,9 +44,12 @@ neovim_alias() {
                 nvim
             elif [ -f "$target" ]; then
                 # If target is a regular file
-                # TODO: maybe cut parent dir path and
-                # TODO: cd there just like we do when it is a dir
-                nvim "$target"
+                # Get the directory of the file
+                file_dir=$(dirname "$target")
+                # Change to the directory of the file
+                cd "$file_dir"
+                # Open the file in nvim
+                nvim "$(basename "$target")"
             fi
             # Go back to dir where we started our editing from
             cd "$initial_dir"
