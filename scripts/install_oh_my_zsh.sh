@@ -8,7 +8,7 @@ yay -S --noconfirm zsh
 
 curl -o install_zsh.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 chmod +x install_zsh.sh
-KEEP_ZSHRC=yes RUNZSH=no sh install_zsh.sh
+KEEP_ZSHRC=yes sh install_zsh.sh --unattended
 rm install_zsh.sh
 
 git clone https://github.com/zsh-users/zsh-autosuggestions \
