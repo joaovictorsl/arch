@@ -4,13 +4,13 @@ NO_COLOR='\033[0m'
 
 echo -e "${GREEN}====> INSTALLING YAY${NO_COLOR}"
 
-sudo pacman -S --needed base-devel
+sudo pacman -S --needed --noconfirm base-devel
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
-makepkg -si
+makepkg -si --noconfirm
 
 yay -Y --gendb
-yay -Syu --devel
+yay -Syu --devel --noconfirm
 yay -Y --devel --save
 
 cd ..
