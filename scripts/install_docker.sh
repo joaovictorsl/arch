@@ -6,7 +6,7 @@ DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
 
 echo -e "${GREEN}====> UNINSTALL ALL DOCKER CONFLICTING PACKAGES${NO_COLOR}"
 
-yay -Rns docker
+yay -Rns --noconfirm docker
 rm -rf $DOCKER_CONFIG
 
 echo -e "${GREEN}====> INSTALLING DOCKER${NO_COLOR}"
