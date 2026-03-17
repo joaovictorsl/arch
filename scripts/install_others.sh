@@ -28,6 +28,8 @@ yay -S --noconfirm \
     cmake \
     ngrok \
     noto-fonts-emoji \
+    ttf-nerd-fonts-symbols \
+    ttf-jetbrains-mono-nerd \
     otf-font-awesome \
     xdg-desktop-portal \
     xdg-desktop-portal-wlr \
