@@ -8,10 +8,10 @@ REPO_ROOT=$1
 
 mkdir -p $HOME/.config
 
-rm $HOME/.zshrc
+rm -rf $HOME/.zshrc
 ln -s $REPO_ROOT/terminal/.zshrc $HOME/.zshrc
 
-rm $HOME/.p10k.zsh
+rm -rf $HOME/.p10k.zsh
 ln -s $REPO_ROOT/terminal/.p10k.zsh $HOME/.p10k.zsh
 
 rm -rf $HOME/.config/hypr
