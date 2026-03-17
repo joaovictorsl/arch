@@ -57,7 +57,7 @@ git clone https://github.com/joaovictorsl/arch
 4. Run script
 
 ```
-./arch/run.sh
+sudo ./arch/run.sh
 ```
 
 5. Post scripts
