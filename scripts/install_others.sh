@@ -31,10 +31,8 @@ yay -S --noconfirm \
     otf-font-awesome \
     xdg-desktop-portal \
     xdg-desktop-portal-wlr \
-    android-studio \
     obsidian \
     zen-browser \
-    beekeeper-studio-bin \
-    stremio
+    beekeeper-studio-bin
 
 echo -e "${GREEN}====> DONE!${NO_COLOR}"
