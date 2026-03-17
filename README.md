@@ -2,7 +2,7 @@
 
 This repository aims to streamline my arch setup.
 
-## What it does?
+## What does it do?
 
 Given a clean arch install, I am able to run some scripts and get everything
 configured.
