@@ -6,7 +6,7 @@
 #
 config-file = keybindings.conf
 
-font-family = "Jetbrains Mono"
+font-family = "JetBrainsMono Nerd Font"
 theme = "TokyoNight Night"
 
 background-opacity = 0.8
