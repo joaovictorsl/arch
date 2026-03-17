@@ -58,6 +58,8 @@ neovim_alias() {
     fi
 }
 alias v=neovim_alias
+
+alias mr='mise run'
 # Aliases
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
