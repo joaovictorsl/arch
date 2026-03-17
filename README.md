@@ -13,11 +13,9 @@ configured.
 |------------|-------------|
 | Yay        | 🟩          |
 | Neovim     | 🟩          |
-| Rust       | 🟩          |
 | Bun        | 🟩          |
 | Golang     | 🟩          |
 | Mise       | 🟩          |
-| Flutter    | 🟩          |
 | Docker     | 🟩          |
 | Git        | 🟩          |
 | Ssh        | 🟩          |
@@ -59,7 +57,3 @@ git clone https://github.com/joaovictorsl/arch
 ```
 sudo ./arch/run.sh
 ```
-
-5. Post scripts
-
-- Setup android studio
