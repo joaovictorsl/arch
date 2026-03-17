@@ -32,7 +32,7 @@ yay -S --noconfirm \
     xdg-desktop-portal \
     xdg-desktop-portal-wlr \
     obsidian \
-    zen-browser \
+    zen-browser-bin \
     beekeeper-studio-bin
 
 echo -e "${GREEN}====> DONE!${NO_COLOR}"
