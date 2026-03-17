@@ -55,5 +55,5 @@ git clone https://github.com/joaovictorsl/arch
 4. Run script
 
 ```
-sudo ./arch/run.sh
+./arch/run.sh
 ```
