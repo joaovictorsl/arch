@@ -229,6 +229,15 @@ vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
   end,
 })
 
+vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
+  pattern = {
+    '**/*.tf',
+  },
+  callback = function()
+    vim.bo.filetype = 'opentofu'
+  end,
+})
+
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
@@ -693,7 +702,6 @@ require('lazy').setup({
       local servers = {
         bashls = {},
         cssls = {},
-        denols = {},
         docker_compose_language_service = {},
         dockerls = {},
         gh_actions_ls = {},
@@ -720,8 +728,10 @@ require('lazy').setup({
         rust_analyzer = {},
         svelte = {},
         tailwindcss = {},
-        terraformls = {},
+        tofu_ls = {},
+        ts_ls = {},
         yamlls = {},
+        zls = {},
       }
 
       -- Ensure the servers and tools above are installed
