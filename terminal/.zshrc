@@ -69,10 +69,6 @@ alias mr='mise run'
 export GOPRIVATE=github.com/joaovictorsl/*
 # Go stuff
 
-# Flutter stuff
-export CHROME_EXECUTABLE=google-chrome-stable
-# Flutter stuff
-
 # Docker stuff
 clean_docker_containers() {
     docker rm -f $(docker ps -qa)
