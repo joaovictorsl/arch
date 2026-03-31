@@ -10,8 +10,10 @@ yay -S --noconfirm \
     less \
     ripgrep \
     tree \
+    unzip \
     lazygit \
     nvim \
+    wl-clipboard \
     ghostty \
     hyprland \
     hyprpaper \
