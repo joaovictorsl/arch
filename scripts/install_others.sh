@@ -17,6 +17,7 @@ yay -S --noconfirm \
     ghostty \
     hyprland \
     hyprpaper \
+    hyprshot \
     waybar \
     rofi \
     google-chrome \
