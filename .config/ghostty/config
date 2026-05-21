@@ -9,7 +9,7 @@ config-file = keybindings.conf
 font-family = "JetBrainsMono Nerd Font"
 theme = "TokyoNight Night"
 
-background-opacity = 0.8
+background-opacity = 1
 cursor-invert-fg-bg
 
 resize-overlay=never
