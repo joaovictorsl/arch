@@ -19,6 +19,7 @@ plugins=(
     helm
     kubectl
     mise
+    rust
     opentofu
     zsh-autosuggestions
     zsh-syntax-highlighting
