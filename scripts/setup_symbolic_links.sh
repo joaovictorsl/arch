@@ -29,4 +29,7 @@ ln -s $REPO_ROOT/.config/rofi $HOME/.config/rofi
 rm -rf $HOME/.config/mise
 ln -s $REPO_ROOT/.config/mise $HOME/.config/mise
 
+rm -rf $HOME/.config/waybar
+ln -s $REPO_ROOT/.config/waybar $HOME/.config/waybar
+
 echo -e "${GREEN}====> DONE!${NO_COLOR}"

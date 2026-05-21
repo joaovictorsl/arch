@@ -38,6 +38,7 @@ yay -S --noconfirm \
     xdg-desktop-portal-wlr \
     obsidian \
     zen-browser-bin \
-    beekeeper-studio-bin
+    beekeeper-studio-bin \
+    python-pywal16
 
 echo -e "${GREEN}====> DONE!${NO_COLOR}"
