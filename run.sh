@@ -17,3 +17,5 @@ $DIR/scripts/install_mise.sh
 $DIR/scripts/install_docker.sh
 
 $DIR/scripts/install_others.sh
+
+$DIR/scripts/systemctl_enable.sh
