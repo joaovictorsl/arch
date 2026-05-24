@@ -5,9 +5,9 @@
 # on Ghostty's website, at https://ghostty.org/docs/config.
 #
 config-file = keybindings.conf
+config-file = ~/.cache/wal/ghostty.conf
 
 font-family = "JetBrainsMono Nerd Font"
-theme = "TokyoNight Night"
 
 background-opacity = 1
 cursor-invert-fg-bg
