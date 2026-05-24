@@ -33,24 +33,20 @@ window#waybar {
 #battery,
 #pulseaudio,
 #backlight,
-#custom-weather {
+#custom-weather,
+#custom-notification,
+#network {
   color: @color5;
   /* color5 */
   background-color: @background;
   /* background */
-  margin: 0 15px 0 0px;
+  margin: 0 0px 0 15px;
   padding: 0 15px 0 15px;
   /* top, right, bottom, left */
 }
 
 #network {
   color: @color2;
-  /* color2 */
-  background-color: @background;
-  /* background */
-  margin: 0 0px 0 0px;
-  padding: 0 15px 0 15px;
-  /* top, right, bottom, left */
 }
 
 #clock {
