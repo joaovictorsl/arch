@@ -19,6 +19,7 @@ yay -S --noconfirm \
     hyprpaper \
     hyprshot \
     waybar \
+    swaync \
     rofi \
     google-chrome \
     openssh \
