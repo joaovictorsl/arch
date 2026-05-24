@@ -33,7 +33,6 @@ window#waybar {
 #battery,
 #pulseaudio,
 #backlight,
-#custom-weather,
 #custom-notification,
 #network {
   color: @color5;
@@ -71,23 +70,4 @@ window#waybar {
 #backlight {
   color: @color5;
   /* color5 */
-}
-
-#custom-weather {
-  color: @color4;
-  /* color2 */
-  background-color: @background;
-  /* background */
-  padding: 0 15px 0 15px;
-  /* top, right, bottom, left */
-}
-
-#custom-media {
-  color: @color4;
-  /* color2 */
-  background-color: @background;
-  /* background */
-  margin: 0 0px 0 15px;
-  padding: 0 15px 0 15px;
-  /* top, right, bottom, left */
 }
