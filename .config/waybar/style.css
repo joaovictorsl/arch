@@ -16,6 +16,18 @@ window#waybar {
   color: @foreground;
 }
 
+#workspaces button {
+  box-shadow: none;
+  text-shadow: none;
+  transition: none;
+  border: none;
+}
+
+#workspaces button:hover {
+  background: transparent;
+  box-shadow: none;
+  text-shadow: none;
+}
 
 #workspaces {
   background-color: @background;
