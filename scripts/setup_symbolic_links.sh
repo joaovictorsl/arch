@@ -35,4 +35,7 @@ ln -s $REPO_ROOT/.config/waybar $HOME/.config/waybar
 rm -rf $HOME/.config/rofi
 ln -s $REPO_ROOT/.config/rofi $HOME/.config/rofi
 
+rm -rf $HOME/.config/swaync
+ln -s $REPO_ROOT/.config/swaync $HOME/.config/swaync
+
 echo -e "${GREEN}====> DONE!${NO_COLOR}"
