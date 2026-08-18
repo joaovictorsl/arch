@@ -38,4 +38,7 @@ ln -s $REPO_ROOT/.config/rofi $HOME/.config/rofi
 rm -rf $HOME/.config/swaync
 ln -s $REPO_ROOT/.config/swaync $HOME/.config/swaync
 
+rm -rf $HOME/.config/wal
+ln -s $REPO_ROOT/.config/wal $HOME/.config/wal
+
 echo -e "${GREEN}====> DONE!${NO_COLOR}"
