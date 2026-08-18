@@ -36,10 +36,10 @@ local function main_display()
 	return find_hdmi() or "eDP-1"
 end
 
--- Keep a constant set of 5 workspaces on the given monitor. They are
+-- Keep a constant set of 4 workspaces on the given monitor. They are
 -- persistent (never removed while empty) and the secondary display stays
 -- empty until a window is explicitly moved onto it.
-local WORKSPACE_COUNT = 5
+local WORKSPACE_COUNT = 4
 local function bind_workspaces_to(monitor)
 	for i = 1, WORKSPACE_COUNT do
 		hl.workspace_rule({ workspace = tostring(i), monitor = monitor, persistent = true })
@@ -59,7 +59,7 @@ local function set_waybar_output(monitor)
 	-- Drop any existing "output" line, then insert the new one after the
 	-- top-level opening brace.
 	content = content:gsub('[ \t]*"[ \t]*output[ \t]*"[ \t]*:[^,\n]*,', "")
-	content = content:gsub("{\n", '{\n  "output": "' .. monitor .. '",\n', 1)
+	content = content:gsub("{\n", '{\n  "output": "' .. monitor .. '",', 1)
 
 	local w = io.open(WAYBAR_CONFIG, "w")
 	if w then
