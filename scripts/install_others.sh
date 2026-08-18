@@ -20,6 +20,7 @@ yay -S --noconfirm \
     hyprshot \
     waybar \
     swaync \
+    gvfs \
     rofi \
     google-chrome \
     openssh \
