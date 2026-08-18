@@ -3,9 +3,9 @@
 --   local programs = require("categories.programs")
 
 local programs = {
-    terminal = "ghostty",
-    browser  = "zen-browser",
-    menu     = "rofi -show drun",
+	terminal = "ghostty",
+	browser  = "zen-browser",
+	menu     = "rofi -show drun",
 }
 
 return programs

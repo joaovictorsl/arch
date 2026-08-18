@@ -1,9 +1,9 @@
 -- https://wiki.hypr.land/Configuring/Basics/Variables/#animations
 
 hl.config({
-    animations = {
-        enabled = true,
-    },
+	animations = {
+		enabled = true,
+	},
 })
 
 -- Default curves, see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/ for more
