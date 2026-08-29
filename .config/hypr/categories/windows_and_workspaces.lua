@@ -3,7 +3,7 @@
 
 -- Ignore maximize requests from apps. You'll probably like this.
 hl.window_rule({
-	name  = "suppress-maximize-events",
+	name = "suppress-maximize-events",
 	match = { class = ".*" },
 
 	suppress_event = "maximize",
@@ -11,15 +11,22 @@ hl.window_rule({
 
 -- Fix some dragging issues with XWayland
 hl.window_rule({
-	name  = "fix-xwayland-drags",
+	name = "fix-xwayland-drags",
 	match = {
-		class      = "^$",
-		title      = "^$",
-		xwayland   = true,
-		float      = true,
+		class = "^$",
+		title = "^$",
+		xwayland = true,
+		float = true,
 		fullscreen = false,
-		pin        = false,
+		pin = false,
 	},
 
 	no_focus = true,
+})
+
+-- https://wiki.hypr.land/Configuring/Basics/Variables/#gestures
+hl.gesture({
+	fingers = 3,
+	direction = "horizontal",
+	action = "workspace",
 })

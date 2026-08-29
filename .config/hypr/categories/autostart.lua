@@ -1,6 +1,6 @@
 -- See https://wiki.hypr.land/Configuring/Basics/Autostart/
 
-local programs = require("categories.programs")
+local programs = require("lib.programs")
 
 hl.on("hyprland.start", function()
 	-- Launch the main apps, each on its dedicated workspace.

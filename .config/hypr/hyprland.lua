@@ -1,29 +1,23 @@
 -- Hyprland Lua configuration (hyprlang was deprecated in Hyprland 0.55)
 -- See https://wiki.hypr.land/Configuring/Start/
 
--------------------
----- MY PROGRAMS --
--------------------
-
-require("categories.programs")
-
------------------
----- AUTOSTART --
------------------
-
-require("categories.autostart")
-
-----------------
----- MONITORS --
-----------------
-
-require("categories.monitors")
-
 -----------------------------
 ---- ENVIRONMENT VARIABLES --
 -----------------------------
 
 require("categories.env_variables")
+
+-------------------
+---- KEYBINDINGS --
+-------------------
+
+require("categories.keybindings")
+
+----------------
+---- MONITORS --
+----------------
+
+require("categories.clamshell")
 
 ---------------------
 ---- LOOK AND FEEL --
@@ -43,14 +37,14 @@ require("categories.animations")
 
 require("categories.input")
 
--------------------
----- KEYBINDINGS --
--------------------
-
-require("categories.keybindings")
-
 ------------------------------
 ---- WINDOWS AND WORKSPACES --
 ------------------------------
 
 require("categories.windows_and_workspaces")
+
+-----------------
+---- AUTOSTART --
+-----------------
+
+require("categories.autostart")

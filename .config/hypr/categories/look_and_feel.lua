@@ -1,6 +1,6 @@
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 
-local wal = require("categories.colors")
+local wal = require("lib.colors")
 
 -- Converts a pywal hex color like "#rrggbb" to Hyprland's rgba() form.
 local function rgba(hex, alpha)
